@@ -35,4 +35,4 @@
 
 ---
 
-![](https://komarev.com/ghpvc/?username=5hristian&color=green)
+![](https://komarev.com/ghpvc/?username=5hristian&color=blue)
