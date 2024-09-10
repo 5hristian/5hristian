@@ -1,16 +1,40 @@
-## Hi there 👋
+## Hello I'm Christian👋
 
-<!--
-**5hristian/5hristian** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+---
 
-Here are some ideas to get you started:
+## 🙋🏻‍♂️ About Me
+🌱 I’m currently diving deep into NodeJS.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+💼 Currently working on Bot Devleopment.
+
+📫 Find me @ https://clipzy.org
+
+---
+
+## 📚 My Skills
+
+### ⚙️ Technical Skills
+[![AE](https://skillicons.dev/icons?i=ae)](https://clipzy.org)
+[![PR](https://skillicons.dev/icons?i=pr)](https://clipzy.org)
+[![PS](https://skillicons.dev/icons?i=ps)](https://clipzy.org)
+[![HTML](https://skillicons.dev/icons?i=html)](https://clipzy.org)
+[![CSS](https://skillicons.dev/icons?i=css)](https://clipzy.org)
+[![GitHub](https://skillicons.dev/icons?i=github)](https://clipzy.org)
+
+### 💻 Programming Languages
+[![nodejs](https://skillicons.dev/icons?i=nodejs)](https://clipzy.org)
+[![py](https://skillicons.dev/icons?i=python)](https://clipzy.org)
+
+---
+
+## 🤝 Connect With Me
+
+- [YouTube](https://youtube.com/clipzy)
+- [Twitter](https://twitter.com/clpzy)
+- [Twitch](https://twitch.tv/clipzy)
+- [Instagram](https://instagram.com/@clipzys)
+- [Website](https://clipzy.org)
+
+---
+
+![](https://komarev.com/ghpvc/?username=5hristian&color=green)
