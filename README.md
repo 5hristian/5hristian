@@ -3,9 +3,8 @@
 ---
 
 ## 🙋🏻‍♂️ About Me
-🌱 I’m currently diving deep into NodeJS.
 
-💼 Currently working on Bot Devleopment.
+💼 I'm Currently working on Bot Devleopment.
 
 📫 Find me @ https://clipzy.org
 
