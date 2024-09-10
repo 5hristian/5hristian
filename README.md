@@ -33,7 +33,6 @@
 - [Twitter](https://twitter.com/clpzy)
 - [Twitch](https://twitch.tv/clipzy)
 - [Instagram](https://instagram.com/@clipzys)
-- [Website](https://clipzy.org)
 
 ---
 
