@@ -4,9 +4,9 @@
 
 ## 🙋🏻‍♂️ About Me
 
-💼 I'm Currently working on Bot Devleopment.
+🌱 I’m currently diving deep into [NodeJS, Python, HTML, CSS]
 
-📫 Find me @ https://clipzy.org
+💼 Currently working on Bot Devleopment.
 
 ---
 
