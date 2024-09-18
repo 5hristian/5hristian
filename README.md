@@ -6,7 +6,7 @@
 
 🌱 I’m currently diving deep into [NodeJS, Python, HTML, CSS]
 
-💼 Currently working on Bot Devleopment.
+💼 Currently working on Bot Development.
 
 ---
 
