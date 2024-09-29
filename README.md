@@ -26,7 +26,7 @@
 
 ---
 
-## 🤝 Connect With Me
+### 🤝 Connect With Me
 
 - [YouTube](https://youtube.com/clipzy)
 - [Twitter](https://twitter.com/clpzy)
@@ -35,4 +35,20 @@
 
 ---
 
+### 🧑‍💻 My Github Stats
+
+<a href="https://github.com/5hristian">
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=5hristian&theme=transparent" />
+</a>
+<a href="https://github.com/5hristian">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=5hristian&hide_border=true&card_width=338&theme=transparent" />
+</a>
+<a href="https://github.com/5hristian">
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=5hristian&theme=transparent" />
+</a>
+<a href="https://github.com/5hristian">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=5hristian&hide_border=true&card_width=338&theme=transparent"/>
+</a>
+
+---
 ![](https://komarev.com/ghpvc/?username=5hristian&color=blue)
