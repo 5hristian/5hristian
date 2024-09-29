@@ -27,7 +27,6 @@
 - [YouTube](https://youtube.com/clipzy)
 - [Twitter](https://twitter.com/clpzy)
 - [Twitch](https://twitch.tv/clipzy)
-- [Instagram](https://instagram.com/@clipzys)
 
 ---
 
