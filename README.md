@@ -14,6 +14,7 @@
 [![PS](https://skillicons.dev/icons?i=ps)](https://clipzy.org)
 [![HTML](https://skillicons.dev/icons?i=html)](https://clipzy.org)
 [![CSS](https://skillicons.dev/icons?i=css)](https://clipzy.org)
+[![VSCODE](https://skillicons.dev/icons?i=vscode)](https://clipzy.org)
 [![GitHub](https://skillicons.dev/icons?i=github)](https://clipzy.org)
 
 ### 💻 Programming Languages
