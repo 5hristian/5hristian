@@ -1,6 +1,6 @@
 ## 🙋🏻‍♂️ Hello I'm Christian
 
-🌱 I’m currently diving deep into [NodeJS, Python, HTML, CSS]
+🌱 I’m currently diving deep into [NodeJS, HTML, CSS]
 
 💼 Currently working on Bot Development.
 
