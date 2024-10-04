@@ -1,5 +1,10 @@
 ## 🙋🏻‍♂️ Hello I'm Christian
 
+<img src="https://komarev.com/ghpvc/?username=5hristian&label=Profile%20Views&color=008042&style=flat&label=Visitors" alt="Visitors"></a>
+<img src="https://img.shields.io/badge/dynamic/json?&label=Total%20Stars&color=008042&style=flat&style=for-the-badge&query=%24.stars&url=https://api.github-star-counter.workers.dev/user/5hristian" alt="Profile Stars"></a>
+<img src="https://img.shields.io/badge/dynamic/json?&label=Total%20Forks&color=008042&style=flat&style=for-the-badge&query=%24.forks&url=https://api.github-star-counter.workers.dev/user/5hristian" alt="Profile Forks"></a>
+
+
 🌱 I’m currently diving deep into [NodeJS, HTML, CSS]
 
 💼 Currently working on Bot Development.
@@ -24,13 +29,12 @@
 ---
 
 ## 🌐 Connect With Me
-- [YouTube](https://youtube.com/clipzy)
 - [Twitter](https://twitter.com/clpzy)
-- [Twitch](https://twitch.tv/clipzy)
+- [Discord](https://discord.com/users/454896586439524362)
 
 ---
 
-<div align="center">
+<a href="https://clipzy.org" target="_blank"><img src="https://github.com/5hristian/5hristian/blob/output/github-contribution-grid-snake-dark.svg?palette=github-dark" alt="sneke"></a>
 
 <div align="center">
   <details>
@@ -51,6 +55,3 @@
     </div>
   </details>
 </div>
-
-![Profile Views](https://komarev.com/ghpvc/?username=5hristian&color=blue)
-
