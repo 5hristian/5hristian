@@ -2,7 +2,20 @@
 <img src="https://img.shields.io/badge/dynamic/json?&label=Total%20Stars&color=008042&style=flat&style=for-the-badge&query=%24.stars&url=https://api.github-star-counter.workers.dev/user/5hristian" alt="Profile Stars"></a>
 <img src="https://img.shields.io/badge/dynamic/json?&label=Total%20Forks&color=008042&style=flat&style=for-the-badge&query=%24.forks&url=https://api.github-star-counter.workers.dev/user/5hristian" alt="Profile Forks"></a>
 
-### Contact 📩
+### ⚙️ Technical Skills
+[![AE](https://skillicons.dev/icons?i=ae)](https://clipzy.org)
+[![PR](https://skillicons.dev/icons?i=pr)](https://clipzy.org)
+[![PS](https://skillicons.dev/icons?i=ps)](https://clipzy.org)
+[![HTML](https://skillicons.dev/icons?i=html)](https://clipzy.org)
+[![CSS](https://skillicons.dev/icons?i=css)](https://clipzy.org)
+[![VSCODE](https://skillicons.dev/icons?i=vscode)](https://clipzy.org)
+[![GitHub](https://skillicons.dev/icons?i=github)](https://clipzy.org)
+
+### 💻 Programming Languages
+[![nodejs](https://skillicons.dev/icons?i=nodejs)](https://clipzy.org)
+[![py](https://skillicons.dev/icons?i=python)](https://clipzy.org)
+
+### 📩 Contact Me
 🐦・[**Twitter**](https://twitter.com/clpzy)
 
 👾・[**Discord**](https://discord.com/users/454896586439524362)
