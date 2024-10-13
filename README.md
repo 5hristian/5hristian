@@ -18,7 +18,7 @@
 ### 📩 Contact Me
 🐦・[**Twitter**](https://twitter.com/clpzy)
  
-💀・[**Discord**](https://discord.com/users/454896586439524362)
+👾・[**Discord**](https://discord.com/users/454896586439524362)
 
 🌐・[**Website**](https://clipzy.org)
 
