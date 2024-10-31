@@ -1,6 +1,6 @@
-<img src="https://komarev.com/ghpvc/?username=5hristian&label=Profile%20Views&color=5271dc&style=flat&label=Visitors" alt="Visitors"></a>
-<img src="https://img.shields.io/badge/dynamic/json?&label=Total%20Stars&color=5271dc&style=flat&style=for-the-badge&query=%24.stars&url=https://api.github-star-counter.workers.dev/user/5hristian" alt="Profile Stars"></a>
-<img src="https://img.shields.io/badge/dynamic/json?&label=Total%20Forks&color=5271dc&style=flat&style=for-the-badge&query=%24.forks&url=https://api.github-star-counter.workers.dev/user/5hristian" alt="Profile Forks"></a>
+<img src="https://komarev.com/ghpvc/?username=5hristian&label=Profile%20Views&color=1766c9&style=flat&label=Visitors" alt="Visitors"></a>
+<img src="https://img.shields.io/badge/dynamic/json?&label=Total%20Stars&color=1766c9&style=flat&style=for-the-badge&query=%24.stars&url=https://api.github-star-counter.workers.dev/user/5hristian" alt="Profile Stars"></a>
+<img src="https://img.shields.io/badge/dynamic/json?&label=Total%20Forks&color=1766c9&style=flat&style=for-the-badge&query=%24.forks&url=https://api.github-star-counter.workers.dev/user/5hristian" alt="Profile Forks"></a>
 
 ### ⚙️ Technical Skills
 [![AE](https://skillicons.dev/icons?i=ae)](https://clipzy.org)
