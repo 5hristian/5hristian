@@ -20,7 +20,7 @@
  
 👾・[**Discord**](https://discord.com/users/454896586439524362)
 
-🌐・[**Website**](https://clipzy.org)
+🌐・[**Website**](https://clipzy.org) & [**File Hosting**](https://superstars.lol)
 
 <img src="https://discord.c99.nl/widget/theme-1/454896586439524362.png"> 
 
