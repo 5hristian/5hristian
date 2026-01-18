@@ -6,11 +6,13 @@
 [![AE](https://skillicons.dev/icons?i=ae)](https://clipzy.org)
 [![PR](https://skillicons.dev/icons?i=pr)](https://clipzy.org)
 [![PS](https://skillicons.dev/icons?i=ps)](https://clipzy.org)
+[![HTML](https://skillicons.dev/icons?i=discord)](https://clipzy.org)
 [![HTML](https://skillicons.dev/icons?i=html)](https://clipzy.org)
 [![CSS](https://skillicons.dev/icons?i=css)](https://clipzy.org)
 [![VSCODE](https://skillicons.dev/icons?i=vscode)](https://clipzy.org)
 [![GitHub](https://skillicons.dev/icons?i=github)](https://clipzy.org)
 [![BLENDER](https://skillicons.dev/icons?i=blender)](https://clipzy.org)
+[![MONGO](https://skillicons.dev/icons?i=mongo)](https://clipzy.org)
 
 ### 💻 Programming Languages
 [![nodejs](https://skillicons.dev/icons?i=nodejs)](https://clipzy.org)
