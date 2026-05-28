@@ -11,8 +11,6 @@
 [![CSS](https://skillicons.dev/icons?i=css)](https://clipzy.org)
 [![VSCODE](https://skillicons.dev/icons?i=vscode)](https://clipzy.org)
 [![GitHub](https://skillicons.dev/icons?i=github)](https://clipzy.org)
-[![BLENDER](https://skillicons.dev/icons?i=blender)](https://clipzy.org)
-[![MONGO](https://skillicons.dev/icons?i=mongo)](https://clipzy.org)
 
 ### 💻 Programming Languages
 [![nodejs](https://skillicons.dev/icons?i=nodejs)](https://clipzy.org)
