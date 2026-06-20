@@ -15,6 +15,8 @@
 ### 💻 Programming Languages
 [![nodejs](https://skillicons.dev/icons?i=nodejs)](https://clipzy.org)
 [![py](https://skillicons.dev/icons?i=python)](https://clipzy.org)
+[![lua](https://skillicons.dev/icons?i=lua)](https://clipzy.org)
+[![typescript](https://skillicons.dev/icons?i=typescript)](https://clipzy.org)
 
 ### 📩 Contact Me
 🐦・[**Twitter**](https://twitter.com/clpzy)
