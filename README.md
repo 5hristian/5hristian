@@ -1,4 +1,4 @@
-<a href="https://github.com/5hristian/5hristian">
+<a href="https://clipzy.org" target="_blank">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/5hristian/5hristian/main/dark_mode.svg">
     <img width="985" alt="5hristian's GitHub Profile README" src="https://raw.githubusercontent.com/5hristian/5hristian/main/light_mode.svg">

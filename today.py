@@ -48,7 +48,7 @@ PROFILE = {
     'os': 'Windows 11, macOS',
     'host': 'clipzy.org',
     'kernel': 'Video Editor, Developer',
-    'ide': 'VS Code, Cursor',
+    'ide': 'Cursor 3.1.15',
     'programming': 'Node.js, Python, Lua, TypeScript',
     'computer': 'HTML, CSS, SQL, JSON, YAML',
     'real': 'English',
@@ -586,28 +586,55 @@ def profile_add_stats(parent, header_y):
     span(None, ' )').tail = '\n'
 
 
+def profile_add_entries(parent, y, entries, group=None):
+    """Add rows from (key1, key2, value) tuples; optional group prefix like Websites."""
+    for key1, key2, value in entries:
+        if group is not None:
+            keys = [group, key1]
+        elif key2 is None:
+            keys = [key1]
+        else:
+            keys = [key1, key2]
+        profile_add_field(parent, y, keys, value)
+        y += 20
+    return y
+
+
 def profile_build_info(parent):
     """Rebuild the right-column profile from PROFILE."""
-    profile_add_header(parent, 30, PROFILE['header'])
-    profile_add_field(parent, 50, ['OS'], PROFILE['os'])
-    profile_add_field(parent, 70, ['Uptime'], '0 years, 0 months, 0 days', 'age_data', 'age_data_dots')
-    profile_add_field(parent, 90, ['Host'], PROFILE['host'])
-    profile_add_field(parent, 110, ['Kernel'], PROFILE['kernel'])
-    profile_add_field(parent, 130, ['IDE'], PROFILE['ide'])
-    profile_add_blank(parent, 150)
-    profile_add_field(parent, 170, ['Languages', 'Programming'], PROFILE['programming'])
-    profile_add_field(parent, 190, ['Languages', 'Computer'], PROFILE['computer'])
-    profile_add_field(parent, 210, ['Languages', 'Real'], PROFILE['real'])
-    profile_add_blank(parent, 230)
-    profile_add_field(parent, 250, ['Hobbies', PROFILE['hobbies'][0][0]], PROFILE['hobbies'][0][1])
-    profile_add_field(parent, 270, ['Hobbies', PROFILE['hobbies'][1][0]], PROFILE['hobbies'][1][1])
-    profile_add_header(parent, 310, '- Contact')
-    contact_y = 330
-    for key1, key2, value in PROFILE['contact']:
-        keys = [key1] if key2 is None else [key1, key2]
-        profile_add_field(parent, contact_y, keys, value)
-        contact_y += 20
-    last_contact_y = contact_y - 20
+    y = 30
+    profile_add_header(parent, y, PROFILE['header'])
+    y += 20
+    profile_add_field(parent, y, ['OS'], PROFILE['os'])
+    y += 20
+    profile_add_field(parent, y, ['Uptime'], '0 years, 0 months, 0 days', 'age_data', 'age_data_dots')
+    y += 20
+    profile_add_field(parent, y, ['Host'], PROFILE['host'])
+    y += 20
+    profile_add_field(parent, y, ['Kernel'], PROFILE['kernel'])
+    y += 20
+    profile_add_field(parent, y, ['IDE'], PROFILE['ide'])
+    y += 20
+    profile_add_blank(parent, y)
+    y += 20
+    profile_add_field(parent, y, ['Languages', 'Programming'], PROFILE['programming'])
+    y += 20
+    profile_add_field(parent, y, ['Languages', 'Computer'], PROFILE['computer'])
+    y += 20
+    profile_add_field(parent, y, ['Languages', 'Real'], PROFILE['real'])
+    y += 20
+    profile_add_blank(parent, y)
+    y += 20
+    for label, value in PROFILE['hobbies']:
+        profile_add_field(parent, y, ['Hobbies', label], value)
+        y += 20
+    y = profile_add_entries(parent, y, PROFILE.get('websites', []), group='Websites')
+    profile_add_blank(parent, y)
+    y += 20
+    profile_add_header(parent, y, '- Contact')
+    y += 20
+    y = profile_add_entries(parent, y, PROFILE['contact'])
+    last_contact_y = y - 20
     profile_add_stats(parent, last_contact_y + 40)
 
 
