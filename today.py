@@ -302,6 +302,13 @@ def cache_builder(edges, comment_size, force_cache, loc_add=0, loc_del=0):
         with open(filename, 'w') as f:
             f.writelines(data)
 
+    valid_edges = []
+    for edge in edges:
+        if edge['node'] is None:
+            continue
+        valid_edges.append(edge)
+    edges = valid_edges
+
     if len(data)-comment_size != len(edges) or force_cache: # If the number of repos has changed, or force_cache is True
         cached = False
         flush_cache(edges, filename, comment_size)
@@ -312,14 +319,15 @@ def cache_builder(edges, comment_size, force_cache, loc_add=0, loc_del=0):
     data = data[comment_size:] # remove those lines
     for index in range(len(edges)):
         repo_hash, commit_count, *__ = data[index].split()
-        if repo_hash == hashlib.sha256(edges[index]['node']['nameWithOwner'].encode('utf-8')).hexdigest():
+        repo = edges[index]['node']
+        if repo_hash == hashlib.sha256(repo['nameWithOwner'].encode('utf-8')).hexdigest():
             try:
-                if int(commit_count) != edges[index]['node']['defaultBranchRef']['target']['history']['totalCount']:
+                if int(commit_count) != repo['defaultBranchRef']['target']['history']['totalCount']:
                     # if commit count has changed, update loc for that repo
-                    owner, repo_name = edges[index]['node']['nameWithOwner'].split('/')
-                    print('   counting LOC:', edges[index]['node']['nameWithOwner'], flush=True)
+                    owner, repo_name = repo['nameWithOwner'].split('/')
+                    print('   counting LOC:', repo['nameWithOwner'], flush=True)
                     loc = recursive_loc(owner, repo_name, data, cache_comment)
-                    data[index] = repo_hash + ' ' + str(edges[index]['node']['defaultBranchRef']['target']['history']['totalCount']) + ' ' + str(loc[2]) + ' ' + str(loc[0]) + ' ' + str(loc[1]) + '\n'
+                    data[index] = repo_hash + ' ' + str(repo['defaultBranchRef']['target']['history']['totalCount']) + ' ' + str(loc[2]) + ' ' + str(loc[0]) + ' ' + str(loc[1]) + '\n'
             except TypeError: # If the repo is empty
                 data[index] = repo_hash + ' 0 0 0 0\n'
     with open(filename, 'w') as f:
@@ -343,8 +351,11 @@ def flush_cache(edges, filename, comment_size):
             data = f.readlines()[:comment_size] # only save the comment
     with open(filename, 'w') as f:
         f.writelines(data)
-        for node in edges:
-            f.write(hashlib.sha256(node['node']['nameWithOwner'].encode('utf-8')).hexdigest() + ' 0 0 0 0\n')
+        for edge in edges:
+            repo = edge['node']
+            if repo is None:
+                continue
+            f.write(hashlib.sha256(repo['nameWithOwner'].encode('utf-8')).hexdigest() + ' 0 0 0 0\n')
 
 
 def add_archive():
@@ -380,10 +391,18 @@ def force_close_file(data, cache_comment):
 
 def stars_counter(data):
     """
-    Count total stars in repositories owned by me
+    Count total stars in repositories owned by me.
+    GitHub GraphQL can return a null node for inaccessible repositories.
     """
     total_stars = 0
-    for node in data: total_stars += node['node']['stargazers']['totalCount']
+    for edge in data:
+        repo = edge['node']
+        if repo is None:
+            continue
+        stargazers = repo['stargazers']
+        if stargazers is None:
+            continue
+        total_stars += stargazers['totalCount']
     return total_stars
 
 
