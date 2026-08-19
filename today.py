@@ -90,21 +90,38 @@ def format_plural(unit):
     return 's' if unit != 1 else ''
 
 
-RETRYABLE_STATUS = {502, 503, 504}
+RETRYABLE_STATUS = {429, 502, 503, 504}
+RETRYABLE_ERRORS = (
+    requests.exceptions.ChunkedEncodingError,
+    requests.exceptions.ConnectionError,
+    requests.exceptions.Timeout,
+)
 
 
-def graphql_post(query, variables, retries=5):
-    """POST to GitHub GraphQL with retries on transient gateway errors."""
+def graphql_post(query, variables, retries=8):
+    """POST to GitHub GraphQL with retries on transient gateway and connection errors."""
+    request = None
     for attempt in range(retries):
-        request = requests.post(
-            'https://api.github.com/graphql',
-            json={'query': query, 'variables': variables},
-            headers=auth_headers(),
-        )
+        try:
+            request = requests.post(
+                'https://api.github.com/graphql',
+                json={'query': query, 'variables': variables},
+                headers=auth_headers(),
+                timeout=60,
+            )
+        except RETRYABLE_ERRORS as error:
+            if attempt >= retries - 1:
+                raise
+            wait = min(30, 2 ** attempt)
+            print(f'   GraphQL connection dropped ({error}); retrying in {wait}s', flush=True)
+            time.sleep(wait)
+            continue
         if request.status_code == 200:
             return request
         if request.status_code in RETRYABLE_STATUS and attempt < retries - 1:
-            time.sleep(min(30, 2 ** attempt))
+            wait = min(30, 2 ** attempt)
+            print(f'   GraphQL HTTP {request.status_code}; retrying in {wait}s', flush=True)
+            time.sleep(wait)
             continue
         return request
     return request
@@ -214,7 +231,11 @@ def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, delet
         }
     }'''
     variables = {'repo_name': repo_name, 'owner': owner, 'cursor': cursor}
-    request = graphql_post(query, variables) # I cannot use simple_request(), because I want to save the file before raising Exception
+    try:
+        request = graphql_post(query, variables) # I cannot use simple_request(), because I want to save the file before raising Exception
+    except requests.exceptions.RequestException:
+        force_close_file(data, cache_comment)
+        raise
     if request.status_code == 200:
         if request.json()['data']['repository']['defaultBranchRef'] != None: # Only count commits if repo isn't empty
             return loc_counter_one_repo(owner, repo_name, data, cache_comment, request.json()['data']['repository']['defaultBranchRef']['target']['history'], addition_total, deletion_total, my_commits)
