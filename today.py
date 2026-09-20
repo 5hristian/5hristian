@@ -612,7 +612,7 @@ def profile_add_stats(parent, header_y):
     span('value', '0', 'follower_data').tail = '\n'
 
     line_start(header_y + 60)
-    span('key', 'Lines of Code on GitHub')
+    span('key', 'Lines on GitHub')
     span(None, ':')
     span('cc', '. ', 'loc_data_dots')
     span('value', '0', 'loc_data')
